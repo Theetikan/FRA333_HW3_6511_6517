@@ -89,7 +89,7 @@ def computeEffortHW3(q:list[float], w:list[float])->list[float]:
     # นำ Transpose ของ Jacobian มาคำนวณ
     J_transpose = np.transpose(J)
     
-    # คูณ Jacobian Transpose กับ Wrench (แรง + โ5มเมนต์)
+    # คูณ Jacobian Transpose กับ Wrench (แรง + โมเมนต์)
     #ใช้เครื่องหมายลบเพื่อแสดงว่า torque ของข้อต่อเป็นแรงปฏิกิริยาที่ต่อต้านกับแรง (wrench) ที่ปลายมือ
     tau = -np.dot(J_transpose, w)
     
